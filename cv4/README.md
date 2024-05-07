@@ -8,7 +8,7 @@ Ve chvíli, kdy začneme pracovat na seriózních projektech s větším množst
 Se všemi těmito výzvami nám pomůže takzvaný verzovací systém. Takových systémů je k dispozici vícero, ale zdaleka nejpopulárnější je systém jménem Git.
 
 ## Systém Git
-Verzovací systém Git je jeden z nejpopulárnější systémů pro správu verzí, protože je velmi dobře promyšlený. Díky tomu se dá použít jak na malé projekty, například v rámci tohoto kurzu, tak na rozsáhlý software, na kterém pracují desítky lidí zároveň.
+Verzovací systém Git je jeden z nejpopulárnější systémů pro správu verzí, protože je velmi dobře promyšlený. Díky tomu se dá použít jak na malé projekty, tak na rozsáhlý software, na kterém pracují desítky lidí zároveň.
 
 Git je velmi flexibilní a dá se použít mnoha různými způsoby. Existuje vícero různých metodik, jak s Gitem pracovat, které se liší podle typu a velikosti projektu. Základní princip je však víceméně pořád stejný.
 
@@ -18,7 +18,7 @@ Základním pojmem Gitu je takzvaný repozitář, ve kterém se nachází všech
 ## Základní pojmy
 Představte si, že jste právě dokončili určitou ucelenou věc na vašem projektu. Například jste opravili nějakou chybu nebo přidali nějakou funkčnost. V tuto chvíli si chcete udělat jakýsi snímek toho, v jakém stavu se projekt právě teď nachází, abyste se případně do tohoto stavu mohli kdykoliv vrátit. Je to podobné, jako když hrajete počítačovou hru a chcete si ji v nějakém místě uložit, abyste se pak na toto místo mohli vrátit, kdyby vaši postavu později ve hře potkal neblahý osud.
 
-Náš snímek si tedy pamatuje stav celého projektu v určitém čase. V teorii verzování kódu se takovému snímku říká revize. Git však místo termínu revize používá slovo commit, které nemá žádný český překlad. Toto slovo ale používají naprosto všichni, kdo s Gitem pracují. Budeme jej tedy používat i my.
+Náš snímek si tedy pamatuje stav celého projektu v určitém čase. V teorii verzování kódu se takovému snímku říká revize. Git však místo termínu revize používá slovo commit, které nemá žádný český překlad.
 
 Ke každému commitu se navíc přidává zpráva o tom, co se v něm dokončilo za práci. Po čase si pak můžeme prohlédnout historii commitů v projektu a přehledně vidět, co se přesně dělo.
 
@@ -47,19 +47,24 @@ Všimněte si, že každý commit obsahuje zprávu a takzvaný digitální otisk
 ## Časté příkazy
 Zahrnout do stage všechny změny z aktuálního adresáře
 
-$ git add .
+* $ git add .
+
 Zobrazit lokální stav (ukáže například, co je a není na stage)
 
-$ git status
+* $ git status
+
 Vytvořit commit ze stage
 
-$ git commit -m "Zpráva"
+* $ git commit -m "Zpráva"
+
 Nahrát nové commity na server (GitHub, GitLab, Bitbucket, …)
 
-$ git push
+* $ git push
 
 ## Větve
 Větve jsou oddělené cesty v rámci repozitáře, které umožňují vývojářům pracovat na různých částech projektu nezávisle. Hlavní větev (nejčastěji main nebo master) obsahuje stabilní verze kódu, zatímco větve odvozené od ní mohou obsahovat experimentální nebo vývojové změny. Při dokončení práce na větvi se obvykle sloučí zpět do hlavní větve pomocí operace známé jako "merge" nebo "pull request". Větve umožňují izolovat změny, snadno spolupracovat s ostatními vývojáři a zajistit stabilitu a bezpečnost kódu.
+
+![gitukazka2](https://github.com/anetryg/pocitacova_grafika_2024/blob/main/cv4/images/git-branches-merge.png)
 
 ## Pull request 
 Pull request (často označovaný jako "PR") je žádost o sloučení změn provedených ve větvi do hlavní větve. Při vytváření pull requestu mohou ostatní členové týmu prohlížet změny, poskytovat zpětnou vazbu a provádět kódové revize. Tento proces pomáhá zajistit kvalitu kódu a minimalizovat chyby. Konflikty vznikají, když se dvě větve snaží provést změny ve stejném souboru nebo na stejných řádcích kódu. Je důležité tyto konflikty rozřešit manuálně a poté provést sloučení změn. Většina verzovacích systémů poskytuje nástroje pro řešení konfliktů.
@@ -115,6 +120,8 @@ revert: Vrácení předchozí změny
 ```
 
 Tyto klíčová slova jsou používána jako prefix v commit zprávě, aby jasně identifikovala typ změny provedené v rámci commitu.
+
+![gitukazka1](https://github.com/anetryg/pocitacova_grafika_2024/blob/main/cv4/images/gitexplain.png)
 
 
 # React
