@@ -70,12 +70,14 @@ Větve jsou oddělené cesty v rámci repozitáře, které umožňují vývojá�
 Pull request (často označovaný jako "PR") je žádost o sloučení změn provedených ve větvi do hlavní větve. Při vytváření pull requestu mohou ostatní členové týmu prohlížet změny, poskytovat zpětnou vazbu a provádět kódové revize. Tento proces pomáhá zajistit kvalitu kódu a minimalizovat chyby. Konflikty vznikají, když se dvě větve snaží provést změny ve stejném souboru nebo na stejných řádcích kódu. Je důležité tyto konflikty rozřešit manuálně a poté provést sloučení změn. Většina verzovacích systémů poskytuje nástroje pro řešení konfliktů.
 
 ## GitHub
-Git je nástroj (program), který můžete používat na svém počítači a nepotřebujete žádného externího posktovatele služeb. Nicméně největší síla Gitu je v tom, že můžete kód snadno sdílet s dalšími vývojáři nebo doslova s kýmkoli na světě. Aby bylo sdílení s dalšími lidmi snadné, je vhodné kopii vašeho repozitáře vystavit někde na internetu, aby byl k dispozici kdykoli – bez ohledu na to, zda zrovna máte zapnutý počítač a jste připojeni k internetu. Postupem času vzniklo mnoho poskytovatelů služeb, kteří vám umožní takto zveřejnit Git repozitář – a často k tomu přidávají další služby. Největším takovým poskytovatelem je GitHub (před několika lety ho koupil Microsoft). GitHub vám umožňuje zdarma hostovat soukromé i veřejné repozitáře.
+Git je nástroj (program), který můžete používat u sebe a nepotřebujete žádného externího posktovatele služeb. Nicméně největší síla Gitu je v tom, že můžete kód snadno sdílet s dalšími vývojáři nebo doslova s kýmkoli na světě. Aby bylo sdílení s dalšími lidmi snadné, je vhodné kopii vašeho repozitáře vystavit někde na internetu, aby byl k dispozici kdykoli – bez ohledu na to, zda zrovna máte zapnutý počítač a jste připojeni k internetu. Postupem času vzniklo mnoho poskytovatelů služeb, kteří vám umožní takto zveřejnit Git repozitář – a často k tomu přidávají další služby. Největším takovým poskytovatelem je GitHub (před několika lety ho koupil Microsoft). GitHub vám umožňuje zdarma hostovat soukromé i veřejné repozitáře.
 
-Občas se plete, co je Git a co GitHub. Když to spletete, nevadí. Ale je dobré si pamatovat, že to není jedno a totéž – GitHub je jeden z poskytovatelů služeb postavených nad Gitem.
+Občas se plete, co je Git a co GitHub - je dobré si pamatovat, že to není jedno a totéž – GitHub je jeden z poskytovatelů služeb postavených nad Gitem.
 
 ### Soubor README.md
 Pokud máte v repozitáři v kořenové složce soubor README.md, GitHub bude jeho obsah zobrazovat na úvodní stránce repozitáře na webu. Hodí se tedy do tohoto souboru popsat, co v repozitáři je, k čemu to slouží, jak se daný program či web používá.
+
+![gitukazka2](https://github.com/anetryg/pocitacova_grafika_2024/blob/main/cv4/images/readme.png)
 
 ## GitHub Pages
 Pokud máte v repozitáři nahrané soubory pro webové stránky (index.html, styly, skripty, obrázky…), GitHub z nich umí udělat veřejný web s vlastní adresou vhodnou pro běžného uživatele internetu, návštěvníka webu. Službu na GitHubu aktivujete z detailu repozitáře v záložce Settings v části GitHub Pages. Ve vybírátku Source stačí vybrat hlavní větev (měla by to být větev main, občas se ještě podaří vytvořit repozitář, který má jako hlavní větev master) a uložit. Po uložení se zobrazí modrý pruh s adresou, kde web běží.
@@ -154,7 +156,7 @@ const obsah = <h1 className="title">Titulek stránky</h1>;
 ```
 
 ## Základ aplikace v Reactu
-Abychom mohli JSX obsah vložit na stránku, musíme v kódu založit React aplikaci. To se dělá pomocí metody createRoot objektu ReactDOM, který naimportujeme z balíčku react-dom/client. Do funkce createRoot předáme DOM element, do kterého se buda naše aplikace v Reactu vykreslovat. To obvykle bývá prázdný div element s id nastaveným na root.
+Abychom mohli JSX obsah vložit na stránku, musíme v kódu založit React aplikaci. To se dělá pomocí metody createRoot objektu ReactDOM, který naimportujeme z balíčku react-dom/client. Do funkce createRoot předáme DOM element, do kterého se bude naše aplikace v Reactu vykreslovat. To obvykle bývá prázdný div element s id nastaveným na root.
 
 Funkce vrátí objekt, na kterém zavoláme metodu render a předáme do ní JSX obsah naší aplikace, který se má vykreslit na stránku.
 
