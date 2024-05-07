@@ -22,7 +22,8 @@ Náš snímek si tedy pamatuje stav celého projektu v určitém čase. V teorii
 
 Ke každému commitu se navíc přidává zpráva o tom, co se v něm dokončilo za práci. Po čase si pak můžeme prohlédnout historii commitů v projektu a přehledně vidět, co se přesně dělo.
 
-![gitukazka1](https://github.com/anetryg/pocitacova_grafika_2024/blob/main/geoda/cv4/images/commits.png)
+![gitukazka1](https://github.com/anetryg/pocitacova_grafika_2024/blob/main/cv4/images/commits.svg)
+
 
 Všimněte si, že každý commit obsahuje zprávu a takzvaný digitální otisk. Tento otisk jednoznačně identifikuje každý commit, abychom se kdykoliv mohli k libovolnému commitu vrátit.
 
